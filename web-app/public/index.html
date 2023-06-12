@@ -1,0 +1,52 @@
+<!-- 
+    @Modify this file to display charts for 4 types of air quality sensor data
+    @reference: https://github.com/Azure-Samples/web-apps-node-iot-hub-data-visualization 
+-->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/chart-device-data.js" type="text/javascript" charset="utf-8"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXko3W0nirdWf7A6vy-__Emmn_qEGnKgk&callback=initMap"></script>
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Temperature &amp; Humidity Real-time Data</title>
+</head>
+
+<body>
+    <h1 class="flexHeader">
+        <div class="title">
+            <span>Air Quality Real-time Data</span>
+        </div>
+        <div class="availableDevice">
+            <span>
+                <span id="deviceCount">0 devices</span>
+                <select id="listOfDevices" class="select_box"></select>
+            </span>
+        </div>
+    </h1>
+    <h2>
+        <div id="address"></div>
+    </h2>
+    <div class="temp">
+        <canvas id="tempChart"></canvas>
+    </div>
+    <div class="humidity">
+        <canvas id="humidityChart"></canvas>
+    </div>
+    <div class="co2">
+        <canvas id="co2Chart"></canvas>
+    </div>
+    <div class="pm25">
+        <canvas id="pm25Chart"></canvas>
+    </div>
+</body>
+
+</html>

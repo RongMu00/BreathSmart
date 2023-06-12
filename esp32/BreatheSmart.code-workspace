@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Lab4_vis",
+			"path": "."
+		},
+		{
+			"name": "BreatheSmart",
+			"path": "../BreatheSmart"
+		}
+	],
+	"settings": {}
+}
